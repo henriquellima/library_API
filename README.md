@@ -4,14 +4,14 @@ This API countains three Tables: Users, autors, books and lendings.
 
 # Autors:
 - Register -
-POST  /autores
+POST  /autores  -
 JSON Body: {
 	"nome": "autor_name",
 	"idade": autor_i
   }
  
  - Update - 
- PUT  /autores/:id_autor
+ PUT  /autores/:id_autor  -
 JSON Body: {
 	"nome": "autor_name",
 	"idade": autor_age
@@ -29,7 +29,7 @@ JSON Body: {
   
   # Users:
   - Register -
-POST  /usuarios
+POST  /usuarios  -
  JSON Body: {
   "nome": "user_name",
   "idade": user_age,
@@ -39,7 +39,7 @@ POST  /usuarios
 }
  
  - Update - 
- PUT  /usuarios/:id_user
+ PUT  /usuarios/:id_user  -
  JSON Body: {
   "nome": "user_name",
   "idade": user_age,
@@ -61,7 +61,7 @@ POST  /usuarios
  
  # Books 
  - Register -
-POST  /livros
+POST  /livros  -
  JSON Body: {
   "nome": "book_name",
   "data_publicacao": publication date,
@@ -71,7 +71,7 @@ POST  /livros
   }
  
  - Update - 
- PUT  /livros/:id_book
+ PUT  /livros/:id_book  -
  JSON Body: {
   "nome": "book_name",
   "data_publicacao": publication date,
@@ -92,7 +92,7 @@ POST  /livros
   
  # Lendings
   - Register -
- POST  /emprestimos
+ POST  /emprestimos  -
  JSON BODY: {
   "usuario_id": 2,
   "livro_id": 6,
@@ -100,7 +100,7 @@ POST  /livros
   }
 
    - Status Update - 
- PUT  /emprestimos/:id_lending
+ PUT  /emprestimos/:id_lending  -
  JSON Body: {
   "status": "pendente" (only accepts "pendente"(pending) or "Devolvido"(returned) )
   }
